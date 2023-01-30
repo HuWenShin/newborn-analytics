@@ -5,7 +5,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 import plotly.express as px
 
-df = pd.read_csv("https://raw.githubusercontent.com/HuWenShin/testrun/main/src/newborn.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/HuWenShin/testrun/main/newborn.csv")
 year = df['Year'].unique()
 gender = df['Gender'].unique()
 
