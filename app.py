@@ -5,7 +5,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 import plotly.express as px
 
-df = pd.read_csv("https://raw.githubusercontent.com/HuWenShin/testrun/main/newborn.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/HuWenShin/newborn-analytics/main/newborn.csv")
 year = df['Year'].unique()
 gender = df['Gender'].unique()
 
@@ -22,16 +22,16 @@ external_stylesheets = [
 
 app = dash.Dash(__name__)
 server = app.server
-app.title = "Baby Analytics"
+app.title = "Newborn Analytics"
 
 app.layout = html.Div(
     children = [
         #header
         html.Div(
             children = [
-                html.P(children="👶🏻🇹🇼", className="header-emoji"),
+                html.P(children="👶🏻", className="header-emoji"),
                 html.H1(children="Newborns in Taiwan", className = "header-title"),
-                html.P(children="Analyzing number and gender of newborn babies in Taiwan, for babies born during 1994-2021", className = "header-description"),
+                html.P(children="Analyzing number and gender of newborn babies in Taiwan 🇹🇼, for babies born during 1994-2021", className = "header-description"),
             ], className="header"
         ),
 
