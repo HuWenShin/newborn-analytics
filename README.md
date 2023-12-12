@@ -100,3 +100,8 @@ def update_graph(region):
 
 The interactive dashboard is deployed as a website with Render.
 Click [here](https://newborn-analytics.onrender.com/) to access the web app! (sometimes it takes a while to load)
+
+### Website Deployment
+
+Future improvements
+- Make the html a separate file that links back to the python file
